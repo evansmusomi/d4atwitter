@@ -1,1 +1,2 @@
-<%= render 'tweet' %>
+<strong>@<%= @tweet.user.user_name %></strong>
+<%= render partial: 'tweet', locals:{ tweet: @tweet } %>

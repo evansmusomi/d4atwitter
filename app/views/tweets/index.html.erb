@@ -1,5 +1,5 @@
-<strong><%= @user.user_name %></strong>
+<strong>@<%= @user.user_name %></strong>
 
 <% @tweets.each do |tweet| %>
-<p><%= tweet.status %></p>
+<%= render partial: 'tweet', locals:{ tweet: tweet } %>
 <% end %>
