@@ -12,6 +12,8 @@ class TweetsController < ApplicationController
 
   # Shows compose tweet form
   def new
+    @user = User.find_by(params[:user_id])
+    @tweet = @user.tweets.new
   end
 
   # Creates new tweet

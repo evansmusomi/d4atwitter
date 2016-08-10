@@ -1,2 +1,9 @@
-<h1>Tweets#new</h1>
-<p>Find me in app/views/tweets/new.html.erb</p>
+<h1>New Tweet</h1>
+<!-- Creates 1 label, 1 field form with action url pointing to user_tweets_path and passing in the user and tweet objects -->
+<%= form_for @tweet, url: user_tweets_path(@user,@tweet) do |f| %>
+	<div><%= f.label :status %></div>
+	<div><%= f.text_area :status, placeholder: "What's happening?" %></div>
+	<%= f.submit "Tweet" %>
+<% end %>
+
+<p><%= link_to "Back", :back %></p>

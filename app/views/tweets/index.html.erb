@@ -1,5 +1,6 @@
-<strong>@<%= @user.user_name %></strong>
-
+<div><strong>@<%= @user.user_name %></strong> &middot; <%= link_to "New Tweet", new_user_tweet_path(@user) %></div>
+<div>
 <% @tweets.each do |tweet| %>
 <%= render partial: 'tweet', locals:{ tweet: tweet } %>
 <% end %>
+</div>
