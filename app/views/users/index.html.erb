@@ -1,0 +1,4 @@
+<% @users.each do |user| %>
+	<div><%= image_tag user.profile_pic, class:"mini-profile-pic" %></div>
+	<div><%= user.user_name %></div>
+<% end %>
