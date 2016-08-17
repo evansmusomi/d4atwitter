@@ -1,12 +1,63 @@
-/* Element styles */
-.profile-picture{
-	max-width: 200px;
+/* Layout */
+.navbar-inverse{
+	background-color: #0275d8;
+	border-color: #080808;
 }
-.mini-profile-pic{
-	max-width: 80px;
+.navbar{
+	border: 1px solid transparent;
+	text-align: center;
+	position: static;
 }
-
-/* Tweet page styles */
-.top-buffer{
-	margin-top: 20px;
+.navbar-brand{
+	padding: 15px 15px;
+	font-size: 18px;
+	line-height: 20px;
+	color: #eee;
+	float: none;
+}
+.navbar-brand:hover{
+	color: #fff;
+}
+.footer{
+	padding-top: 19px;
+	color: #777;
+	border-top: 1px solid #e5e5e5;
+}
+/* User list styles */
+.user-list .content{
+	margin: 20px;
+	position: relative;
+}
+.user-list .account-group{
+	display: block;
+	line-height: 16px;
+}
+.user-list .avatar{
+	border-radius: 4px;
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.user-list .account-group-inner{
+	display: block;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #8899a6;
+	margin-left: 40px;
+}
+.user-list .fullname{
+	color: #292f33;
+	font-size: 13px;
+	font-weight: bold;
+}
+.user-list .username{
+	color: #8899a6;
+	display: block;
+}
+s{
+	text-decoration: none;
 }

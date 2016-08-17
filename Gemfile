@@ -23,6 +23,7 @@ gem 'turbolinks', '~> 5'
 
 # Adds Twitter bootstrap
 gem 'bootstrap'
+gem 'font-awesome-sass', '~> 4.6.2'
 
 # Adds FFaker gem
 gem 'ffaker'

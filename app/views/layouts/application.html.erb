@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Twitter</title>
+    <title>D4A Lab</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,8 +9,11 @@
   </head>
 
   <body>
-  	<div class="container">
-    	<%= yield %>
-	</div>
+      <%= render "layouts/header" %>
+      <div class="container">
+      	<%= yield %>
+      </div>
+      <%= render "layouts/footer" %>
+    </div>
   </body>
 </html>

@@ -1,4 +1,13 @@
+<div class="user-list">
 <% @users.each do |user| %>
-	<div><%= image_tag user.profile_pic, class:"mini-profile-pic" %></div>
-	<div><%= user.user_name %></div>
+	<div class="content">
+	    <a class="account-group" href="<%= user_url(user) %>">
+	    	<%= image_tag user.profile_pic, class: 'avatar', alt: user.user_name %>
+	      	<span class="account-group-inner">
+	        	<b class="fullname"><%= user.screen_name %></b>
+	        	<span class="username"><s>@</s><%= user.user_name %></span>
+	      	</span>
+	    </a>
+  	</div>
 <% end %>
+</div>
