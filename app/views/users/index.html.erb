@@ -1,7 +1,7 @@
 <div class="user-list">
 <% @users.each do |user| %>
 	<div class="content">
-	    <a class="account-group" href="<%= user_url(user) %>">
+	    <a class="account-group" href="<%= twitter_url(user.user_name) %>">
 	    	<%= image_tag user.profile_pic, class: 'avatar', alt: user.user_name %>
 	      	<span class="account-group-inner">
 	        	<b class="fullname"><%= user.screen_name %></b>

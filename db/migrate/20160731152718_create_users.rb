@@ -8,6 +8,7 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.string :gender, default: ""
       t.string :email, default: ""
       t.string :profile_pic, default: ""
+      t.string :city, default: ""
 
       t.timestamps
     end

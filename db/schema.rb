@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20160731152735) do
     t.string   "gender",        default: ""
     t.string   "email",         default: ""
     t.string   "profile_pic",   default: ""
+    t.string   "city",          default: ""
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
     t.index ["user_name"], name: "index_users_on_user_name"
