@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/ffaker/ffaker.git
+  revision: bf8e51b6aacbc5dac698c2feb9e58c2f15c5cb99
+  specs:
+    ffaker (2.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -57,7 +63,6 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.7.0)
-    ffaker (2.2.0)
     ffi (1.9.14)
     font-awesome-sass (4.6.2)
       sass (>= 3.2)
@@ -162,7 +167,7 @@ DEPENDENCIES
   bootstrap
   byebug
   coffee-rails (~> 4.2)
-  ffaker
+  ffaker!
   font-awesome-sass (~> 4.6.2)
   jquery-rails
   listen (~> 3.0.5)

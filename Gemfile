@@ -26,7 +26,7 @@ gem 'bootstrap'
 gem 'font-awesome-sass', '~> 4.6.2'
 
 # Adds FFaker gem
-gem 'ffaker'
+gem 'ffaker', git: 'https://github.com/ffaker/ffaker.git'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
