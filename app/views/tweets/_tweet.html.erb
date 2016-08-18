@@ -1,4 +1,46 @@
+<!-- begin tweet -->
 <div class="tweet">
-<p><%= tweet.status %></p>
-<p><%= tweet.created_at.to_formatted_s(:short) %></p>
+	<!-- begin tweet content -->
+	<div class="content">
+		<!-- begin tweet header -->
+		<div class="item-header">
+			<a class="account-group">
+				<%= image_tag tweet.user.profile_pic, class:"avatar" %>
+				<strong class="fullname"><%= tweet.user.screen_name %></strong>
+				<span class="username"><s>@</s><b><%= tweet.user.user_name %></b></span>
+				<small class="time" title="<%= nairobi_time(tweet.created_at).to_s(:long) %>">
+					<span><%= nairobi_time(tweet.created_at).to_s(:short) %></span>
+				</small>
+				<span class="geo pull-right" title="<%= tweet.user.city %>">
+					<span class="icon fa fa-map-marker"></span>
+				</span>
+			</a>
+		</div>
+		<!-- begin tweets' main body -->
+ 		<div class="tweet-text">
+			<p><%= tweet.status %></p>
+		</div>
+		<!-- begin tweet footer -->
+		<div class="item-footer">
+			<div class="tweet-action-list">
+				<div class="tweet-action">
+					<span class="fa fa-reply"></span>
+				</div>
+				<div class="tweet-action">
+					<span class="fa fa-retweet"></span>
+				</div>
+				<div class="tweet-action">
+					<span class="fa fa-heart"></span>
+				</div>
+				<% if index %>
+				<div class="tweet-action">
+					<a href="<%= tweet_url(tweet) %>"><span class="fa fa-ellipsis-h"></span></a>
+				</div>
+				<% end %>
+			</div>
+		</div>
+		<!-- close tweet footer -->
+	</div>
+	<!-- close tweet content -->
 </div>
+<!-- close tweet -->

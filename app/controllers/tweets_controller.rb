@@ -1,28 +1,26 @@
 class TweetsController < ApplicationController
-  # Lists tweets
-  def index
-  	@user = User.find_by(params[:user_id])
-  	@tweets = Tweet.where(user_id: params[:user_id])
-  end
+  # Finds the user before starting the create action
+  before_action :set_user, only:[:create]
 
   # Shows a tweet
   def show
   	@tweet = Tweet.find_by(id: params[:id])
   end
 
-  # Shows compose tweet form
-  def new
-    @user = User.find_by(params[:user_id])
-    @tweet = @user.tweets.new
-  end
-
-  # Creates new tweet
+  # Creates new tweet and redirects to user's profile
   def create
+    @user.tweets.create(tweet_params)
+    redirect_to twitter_url(@user.user_name)
   end
 
   private
-  	# Protects our data from the scary internet
+  	# Sets permitted attribute for a new tweet
   	def tweet_params
-  		params.permit(:status)
+      params.require(:tweet).permit(:status)
   	end
+
+    # Sets relevant user
+    def set_user
+      @user = User.find_by(user_name: params[:user_name])
+    end
 end

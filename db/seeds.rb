@@ -10,7 +10,7 @@ User.destroy_all
 	 	date_of_birth: rand(18..50).years.ago(Date.today),
 	 	gender: ['male', 'female'].sample,
 	 	email: FFaker::Internet.email,
-	 	profile_pic: 'http://placehold.it/100x100',
+	 	profile_pic: 'http://placehold.it/200x200',
 	 	city: FFaker::Address.city
 	)
 

@@ -1,0 +1,7 @@
+<!-- Creates 1 label, 1 field form with action url pointing to post_tweet_path and passing in the user and tweet objects -->
+<div class="card card-block card-primary">
+<%= form_for @tweet, url: post_tweet_path do |f| %>
+	<div class="form-group"><%= f.text_area :status, placeholder: "What's happening @#{user.user_name}?", class:"form-control" %></div>
+	<%= f.submit "Tweet", class:"btn btn-info" %>
+<% end %>
+</div>

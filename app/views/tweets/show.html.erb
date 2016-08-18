@@ -1,3 +1,6 @@
-<strong>@<%= @tweet.user.user_name %></strong>
-<%= render partial: 'tweet', locals:{ tweet: @tweet } %>
-<p><%= link_to 'Back', :back %></p>
+<div class="tweets size26">
+<%= render partial: 'tweet', locals:{ tweet: @tweet, index: false } %>
+<p class="status-back">
+	<a class="btn btn-primary" href="javascript:history.back()"><i class="fa fa-chevron-left"></i> Back</a>
+</p>
+</div>
