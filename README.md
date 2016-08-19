@@ -6,6 +6,6 @@ Technology stack:
 
 * Rails 5.0
 
-* Database: SQLite
+* Database: PostgresQL / SQLite
 
 * ...
