@@ -1,0 +1,14 @@
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+sw:
+  male: "Kiume"
+  female: "Kike"
+  whats_happening: "Nini chafanyika"
+  dev:
+    name: "Musomi Muema"
+  app:
+    title: "MiniTwitter"
+    credits: "2016 - Twitter ndogo iliyo tengenezwa kwa Rails na"
+    tweet: "Twiti"
+    back: "Rudi nyuma"

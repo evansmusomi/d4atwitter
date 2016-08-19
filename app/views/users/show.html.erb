@@ -16,7 +16,7 @@
 			</div>
 			<div class="profile-header-card-gender">
 				<%= gender_icon(@user.gender) %>
-				<span class="profile-header-card-gender-text"><%= @user.gender.capitalize %></span>
+				<span class="profile-header-card-gender-text"><%= I18n.t "#{@user.gender.downcase}" %></span>
 			</div>
 		</div>
 	</div>
