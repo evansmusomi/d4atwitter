@@ -8,7 +8,7 @@ sw:
   dev:
     name: "Musomi Muema"
   app:
-    title: "MiniTwitter"
+    title: "TwitterNdogo"
     credits: "2016 - Twitter ndogo iliyo tengenezwa kwa Rails na"
     tweet: "Twiti"
     back: "Rudi nyuma"
