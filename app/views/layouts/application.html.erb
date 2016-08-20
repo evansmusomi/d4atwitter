@@ -10,6 +10,7 @@
 
   <body>
       <%= render "layouts/header" %>
+      <%= render "layouts/notification" if !flash.empty? %>
       <div class="container">
       	<%= yield %>
       </div>

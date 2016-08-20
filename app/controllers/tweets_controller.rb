@@ -9,7 +9,10 @@ class TweetsController < ApplicationController
 
   # Creates new tweet and redirects to user's profile
   def create
-    @user.tweets.create(tweet_params)
+    @tweet = @user.tweets.new(tweet_params)
+    if !@tweet.save
+      flash['alert-danger'] = @tweet.errors.full_messages.to_sentence
+    end
     redirect_to twitter_url(@user.user_name)
   end
 

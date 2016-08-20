@@ -24,6 +24,12 @@
 .navbar-brand:hover{
 	color: #fff;
 }
+#flash_messages{
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	top:42px;
+}
 .footer{
 	padding-top: 19px;
 	color: #777;
